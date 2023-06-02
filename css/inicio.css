@@ -126,9 +126,9 @@ header .nav-bar:hover {
   display: inline-block;
   text-decoration: none;
   background-color: #000;
-  color: #4102ca;
+  color: #a478f0;
   box-shadow: 0 0 20px #000;
-  border: 1px solid #4102ca;
+  border: 1px solid #a478f0;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -139,7 +139,7 @@ header .nav-bar:hover {
 
 .inicio .content-section .info .redes a:hover {
   color: #000;
-  background-color: #4102ca;
+  background-color: #a478f0;
   box-shadow: 0 0 20px #000;
 }
 
@@ -150,7 +150,7 @@ header .nav-bar:hover {
 .inicio .content-section .foto img {
   max-width: 200px;
   border-radius: 50%;
-  border: 5px solid #4102ca;
+  border: 5px solid #6728d6;
   position: absolute;
   left: 50%;
   top: -100px;

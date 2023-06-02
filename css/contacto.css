@@ -37,3 +37,8 @@
 .contacto .content-section .fila .col h2 {
   color: #000;
 }
+
+.contacto .content-section .fila .col .info-contacto {
+  text-decoration: none;
+  color: #fff;
+}

@@ -34,9 +34,11 @@ let php = document.getElementById("php");
 crearBarra(php);
 let python = document.getElementById("python");
 crearBarra(python);
+let git = document.getElementById("git");
+crearBarra(git);
 
 // Animación
-let contadores = [-1, -1, -1, -1, -1, -1];
+let contadores = [-1, -1, -1, -1, -1, -1, -1];
 let entro = false;
 
 function efectoHabilidades() {
@@ -47,22 +49,25 @@ function efectoHabilidades() {
   if (distancia_skills >= 300 && entro == false) {
     entro = true;
     const intervalHtml = setInterval(function () {
-      pintarBarra(html, 70, 0, intervalHtml);
+      pintarBarra(html, 90, 0, intervalHtml);
     }, 100);
     const intervalCss = setInterval(function () {
-      pintarBarra(css, 50, 1, intervalCss);
+      pintarBarra(css, 60, 1, intervalCss);
     }, 100);
     const intervalJavaScript = setInterval(function () {
       pintarBarra(javascript, 40, 2, intervalJavaScript);
     }, 100);
     const intervalMysql = setInterval(function () {
-      pintarBarra(mysql, 35, 3, intervalMysql);
+      pintarBarra(mysql, 50, 3, intervalMysql);
     }, 100);
     const intervalPhp = setInterval(function () {
       pintarBarra(php, 35, 4, intervalPhp);
     }, 100);
     const intervalPython = setInterval(function () {
-      pintarBarra(python, 20, 5, intervalPython);
+      pintarBarra(python, 70, 5, intervalPython);
+    }, 100);
+    const intervalGit = setInterval(function () {
+      pintarBarra(git, 60, 6, intervalGit);
     }, 100);
   }
 }
@@ -72,7 +77,7 @@ function pintarBarra(id_barra, cantidad, indice, interval) {
   x = contadores[indice];
   if (x < cantidad) {
     let elementos = id_barra.getElementsByClassName("e");
-    elementos[x].style.backgroundColor = "#44EBE9";
+    elementos[x].style.backgroundColor = "#fff";
   } else {
     clearInterval(interval);
   }
